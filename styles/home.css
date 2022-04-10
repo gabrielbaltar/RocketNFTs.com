@@ -356,6 +356,88 @@ menu {
 
 @media (max-width: 380px) {
     .grid-imagens {
-        gap: 0.3rem;
+        column-gap: 0.3rem;
+        row-gap: 1rem;
     }
+}
+
+/* 3ª Seção do site */
+
+.segundo-container {
+    max-width: 100%;
+    background: var(--body-background);
+    color: var(--text-color);
+}
+
+
+.conteudo-container {
+    display: grid;
+    grid-template-columns: 315px 1fr;
+    height: 660px;
+}
+
+.numeros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+    border-right: 2px solid var(--subtitle-color);
+    border-bottom: 2px solid var(--subtitle-color);
+}
+
+.numero1 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.numero1 h2 {
+    font-size: 3.125rem;
+    font-weight: 700;
+}
+
+.numero1 p {
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: var(--subtitle-color);
+}
+
+.conteudo-artistas {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 100%;
+}
+
+.textos-artistas {
+    display: flex;
+    height: 214px;
+    margin-left: 100px;
+    margin-top: 80px;
+    gap: 126px;
+}
+
+.texto-1 p{
+    width: 370px;
+    font-size: 1.125rem;
+    margin-bottom: 64px;
+}
+
+.texto-1 a {
+    color: var(--text-color);
+}
+
+.texto-1 span {
+    color: var(--color-logo);
+}
+
+.conteudo-artistas-img img{
+    display: block;
+    margin-top: 66px;
+    background-size: contain;
+    background-position: center;
+    object-fit: cover;
+    height: 300px;
+    max-width: 100%;
 }
