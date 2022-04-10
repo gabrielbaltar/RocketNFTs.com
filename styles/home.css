@@ -20,7 +20,7 @@
 /* Conteúdo Principal da página */
 
 main {
-    background: url('/assets/background-main.svg') no-repeat;
+    background: url('../assets/background-main.svg') no-repeat;
     height: 1000px;
     max-width: 100%;
     background-size: cover;
