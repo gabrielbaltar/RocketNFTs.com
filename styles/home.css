@@ -1,0 +1,192 @@
+/* Resetando o arquivo padrão do navegador E Cores das páginas em variáves */
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    --body-background: #0e0e0e;
+    --color-logo: #ff5b50;
+    --card-color: #252525;
+    --text-color: #fff;
+    --subtitle-color: #5a5757;
+    --black-text: #000;
+    --color-input: #0D0D0D;
+}
+
+/* Conteúdo Principal da página */
+
+main {
+    background: url('/assets/background-main.svg') no-repeat;
+    height: 1000px;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    max-width: 79.812rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+/* Menu do site */
+.conteudo-menu {
+    display: flex;
+    align-items: center;
+    gap: 200px;
+    margin-top: 3.562rem;
+}
+
+
+
+.botao-conectar-carteira {
+    display: flex;
+    height: 3.125rem;
+    width: 16.25rem;
+    background-color: var(--text-color);
+    
+}
+
+.botao-conectar-carteira a{
+    display: flex;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    color: var(--black-text);
+    font-weight: 700;
+    gap: 15px;
+}
+
+.conteudo-menu div {
+    display: flex;
+    justify-content: center;
+}
+
+.lista{
+    display: flex;
+    gap: 3.65rem;
+    font-family: 'Montserrat';
+    font-weight: 400;
+    font-size: 1.125rem;
+}
+
+.lista a {
+    color: var(--text-color) ;
+}
+
+menu {
+    height: 3.125rem;
+    display: flex;
+}
+
+@media (max-width: 1310px) {
+    .container {
+        justify-content: space-evenly;
+    }
+
+    .conteudo-menu {
+        gap: 6.25rem;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .conteudo-menu {
+        gap: 1.875rem;
+    }
+
+    .lista{
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 910px) {
+
+    .container {
+        justify-content: start;
+        margin-left: 5.187rem;
+    }
+
+    .container .botao-conectar-carteira {
+        display: none;
+    }
+}
+
+@media (max-width: 740px) {
+    .lista {
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    .container {
+        justify-content: space-evenly;
+        margin-left: 3rem;
+    }
+}
+
+/* Início da segunda seção do main */
+
+.container-texto {
+    color: var(--text-color);
+    max-width: 79.812rem;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.conteudo {
+    height: 27.25rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.texto-imagem {
+    display: flex;
+    width: 40ch;
+    flex-direction: column;
+}
+
+.texto-imagem p {
+    margin-bottom: 3.437rem;
+    line-height: 1.5;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.avatar {
+    display: flex;
+    align-items: end;
+    gap: 1rem;
+}
+
+.texto-avatar {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    font-size: 1.125rem;
+}
+
+#ten {
+    font-weight: 700;
+}
+
+.titulo {
+    font-size: 1.9rem;
+    width: 32ch;
+    max-width: 550px;
+}
+
+.titulo span {
+    color: var(--color-logo);
+}
