@@ -331,9 +331,17 @@ menu {
         height: 100px;
         width: 156px;
     }
+
+    main {
+        height: 900px;
+    }
 }
 
 @media (max-width: 880px) {
+
+    main {
+        height: 1000px;
+    }
 
     .grid-imagens {
        margin-top: 90px;
@@ -344,6 +352,10 @@ menu {
     .grid-imagens {
         grid-template-columns: repeat(3, 156px);
     }
+
+    main {
+        height: 1100px;
+    }
 }
 
 @media (max-width: 630px) {
@@ -351,6 +363,10 @@ menu {
         grid-template-columns: repeat(2, 9.75rem);
         padding-top: 3rem;
         
+    }
+
+    main {
+        height: 1300px;
     }
 }
 
@@ -434,10 +450,279 @@ menu {
 
 .conteudo-artistas-img img{
     display: block;
-    margin-top: 66px;
+    margin-top: 4.125rem;
     background-size: contain;
     background-position: center;
     object-fit: cover;
-    height: 300px;
+    height: 18.75rem;
     max-width: 100%;
+}
+
+@media (max-width: 1300px) {
+
+    .textos-artistas {
+        margin-left: 32px;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 1150px) {
+    .conteudo-container {
+        display: grid;
+        grid-template-columns: 250px 1fr;
+        height: 660px;
+    }
+
+    .texto-1 {
+        width: 240px;
+    }
+
+    .texto-1 p {
+        width: 230px;
+        margin: 0px;
+    }
+
+}
+
+@media (max-width: 800px) {
+
+    .numeros {
+        flex-direction: row;
+        height: 15.625rem;
+        gap: 1.8rem;
+    }
+
+    .numero1 h2 {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .numero1 p {
+        font-size: 1rem;
+    }
+
+    .conteudo-container {
+        grid-template-columns: 1fr;
+        height: 947px;
+    }
+
+    .textos-artistas {
+        flex-direction: column;
+    }
+
+    .texto-1 {
+        width: 600px;
+    }
+
+    .texto-1 p {
+        width: 600px;
+        padding-bottom: 1.2rem;
+    }
+
+    .textos-artistas {
+        height: 250px;
+        margin-left: 32px;
+        margin-top: 80px;
+        gap: 32px;
+    }
+
+}
+
+@media (max-width: 640px) {
+    .texto-1 {
+        width: 400px;
+    }
+
+    .texto-1 p {
+        width: 400px;
+        padding-bottom: 1.2rem;
+    }
+
+    .conteudo-artistas {
+        height: 800px;
+    }
+
+    .textos-artistas {
+        height: 400px;
+        margin-left: 32px;
+        margin-top: 80px;
+        gap: 32px;
+    }
+
+    .conteudo-container {
+        height: 798px;
+    }
+}
+
+@media (max-width: 450px) {
+    .texto-1 {
+        width: 18.75rem;
+    }
+
+    .texto-1 p {
+        width: 19.375rem;
+        padding-bottom: 1.2rem;
+    }
+}
+
+/* 3° seção Populares da semana */
+
+.conteiner-populares {
+    background: var(--body-background);
+    height: 1200px;
+    color: var(--text-color);
+}
+
+.populares-conteudo {
+    height: 1150px;
+    max-width: 1277px;
+    margin: 0 auto;
+}
+
+.populares-conteudo h1 {
+    font-size: 3.125rem;
+    margin-left: 5.4375rem;
+    margin-bottom: 9.875rem;
+    padding-top: 9.375rem;
+    /* width: 430px; */
+}
+
+.populares-conteudo span {
+    color: var(--color-logo);
+}
+
+.populares-cards {
+    margin-left: 5.4375rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 370px);
+}
+
+.titulo-populares p{
+    display: flex;
+    align-items: center;
+    gap: 5.75rem;
+    font-size: 1.875rem;
+}
+
+.titulo-populares {
+    margin-bottom: 1.625rem;
+}
+
+.subtitulo-populares p{
+    display: flex;
+    gap: 5.75rem;
+    color: var(--subtitle-color);
+    font-size: 1.25rem;
+}
+
+.card1 p, span{
+    font-size: 500;
+}
+
+.card1 img{
+    display: block;
+}
+
+.imagem-astronauta img{
+    width: 19.375rem;
+    margin-top: 1.625rem;
+}
+
+
+@media (max-width: 800px) {
+    
+    .populares-conteudo h1 {
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+
+    .populares-cards {
+        margin-left: 2rem;
+    }
+}
+
+@media (max-width: 642px) {
+    
+    .populares-conteudo h1 {
+        margin-left: 2rem;
+        font-size: 2rem;
+    }
+
+    .conteudo-container {
+        height: 1050px;
+    }
+}
+
+@media (max-width: 470px) {
+    
+    .populares-conteudo h1 {
+        width: 300px;
+    }
+}
+
+@media (max-width: 770px){
+
+    .populares-cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 260px);
+    }
+
+    .titulo-populares p{
+        gap: 2rem;
+        font-size: 1.125rem;
+    }
+
+    .titulo-populares img {
+        height: 20px;
+    }
+
+    .subtitulo-populares p{
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+        font-size: 1rem;
+    }
+
+    .imagem-astronauta img{
+        width: 200px;
+        margin-top: 1.625rem;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .conteiner-populares {
+        height: 1600px;
+    }
+
+
+    .populares-cards {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(2, 300px);
+    }
+
+    .titulo-populares p{
+        gap: 5.75rem;
+        font-size: 1.25rem;
+    }
+
+    .titulo-populares img {
+        height: 20px;
+    }
+
+    .subtitulo-populares p{
+        display: flex;
+        align-items: center;
+        gap: 5.75rem;
+        font-size: 1rem;
+    }
+
+    .imagem-astronauta img{
+        width: 264px;
+        margin-top: 1.625rem;
+        padding-bottom: 3rem;
+    }
+
+
 }
