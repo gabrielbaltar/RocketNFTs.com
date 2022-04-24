@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img alt="Rocket NFT's" title="Rocket.Q" src=".github/logo.nfts.svg" width="220px" />
+  <img alt="Rocket NFT's" title="Rocket.Q" src=".github/logo_nfts.svg" width="220px" />
 </h1>
 
 <p align="center">
