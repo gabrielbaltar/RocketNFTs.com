@@ -708,7 +708,7 @@ menu {
     }
 
     .titulo-populares img {
-        height: 20px;
+        height: 1.25rem;
     }
 
     .subtitulo-populares p{
@@ -719,10 +719,159 @@ menu {
     }
 
     .imagem-astronauta img{
-        width: 264px;
+        width: 16.5rem;
         margin-top: 1.625rem;
         padding-bottom: 3rem;
     }
+}
 
+/* Section melhores artistas */
 
+.container-artistas {
+    height: 800px;
+    background: var(--body-background);
+}
+
+.artistas-content {
+    height: 682px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+}
+
+.artistas-content .title h2{
+    font-size: 3.125rem;
+    color: var(--text-color);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+} 
+
+.artistas-content .title span{
+    color: var(--color-logo);
+}
+
+.section1 {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 111px;
+    justify-content: center;
+}
+
+.section1 .card1 {
+    width: 21.875rem;
+    height: 9.375rem;
+    background: var(--card-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.section1 .card1#card1-flamingo {
+    background: var(--color-logo);
+}
+
+.section1 .card1#card1-flamingo span{
+    color: var(--text-color);
+}
+
+.section1 .card1 .font p {
+    color: var(--text-color);
+    font-weight: 500;
+    font-size: 1.25rem;
+}
+
+.section1 .card1 .font span {
+    color: var(--color-logo);
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+
+.text-link-all-artists a {
+    color: var(--text-color);
+    font-size: 1.25rem;
+    display: flex;
+    align-items: center;
+    column-gap: 1.25rem;
+    padding-top: 4rem;
+}
+
+@media only screen and (max-width: 920px) {
+    
+    .title h2{
+        margin-bottom: 2rem;
+        text-align: center;
+    }
+
+    .section1 .card1 {
+        width: 35rem;
+    }
+
+    .container-artistas {
+        height: 1450px;
+    } 
+
+    .section1{
+        column-gap: 1.5rem;
+        width: auto;
+        flex-direction: column;
+        row-gap: 1.5rem;
+        justify-content: start;
+    }
+
+    .artistas-content {
+        width: auto;
+        margin-right: 48px;
+    }
+}
+
+@media only screen and (max-width: 664px) {
+    .section1 .card1 {
+        width: 21.875rem;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .title h2{
+        text-align: left;
+    }
+
+    .artistas-content .title h2{
+        font-size: 2rem;
+        padding-top: 0rem;
+    } 
+}
+
+@media only screen and (max-width: 423px) {
+    .artistas-content {
+        width: auto;
+        margin-right: 2rem;
+    }
+
+    .section1 .card1 {
+        width: 20rem;
+        height: 9.375rem;
+        background: var(--card-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .title {
+        text-align: left;
+    }
+
+    .artistas-content .title h2{
+        padding-top: 1rem;
+        padding-bottom: 2rem;
+    } 
+    
 }
