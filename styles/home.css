@@ -877,5 +877,34 @@ menu {
         padding-top: 1rem;
         padding-bottom: 2rem;
     } 
-    
+}
+
+/* Estilização do footer */
+
+.footer-container {
+    height: 709px;
+    max-width: 100%;
+    background: var(--card-color);
+}
+
+.footer-content {
+    height: 566px;
+}
+
+.content-logo {
+    display: flex;
+    align-items: center;
+    height: 14rem;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+.content-button {
+    height: 5rem;
+    width: 5rem;
+    background: var(--color-logo);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
